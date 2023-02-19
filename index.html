@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Lobang: Adventure Begins!</title>
+
+   
+    <!-- Custom Style -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+
+     <!--Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+       rel="stylesheet"
+     />
+     <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <!----------------- Navigation ----------------->
+    <header class="header">
+      <a href="index.html">
+        <img class="logo" alt="Travel Lobang logo" src="images/logo.png" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="itinerary.html">Itinerary</a></li>
+          <li><a class="main-nav-link" href="destination.html">Destination</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Go Local!</a>
+          </li>
+          <li><a class="main-nav-link nav-cta" href="#articles">Explore Now</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <!----x------------ Navigation ------------x---->
+
+    <!----------------- Main Content --------------->
+
+    <main>
+      <!---------- Site Title ---------->
+
+      <section class="section-hero">
+        <div class="site-background">
+        <h3 class="title-1">Travel + Leisure</h3>
+        <h1 class="title-2">Explore Amazing Places In Singapore</h1>
+        <div class="wrapper">
+          <input type="text" class="input" id="search-box" placeholder="Where are you going?"  aria-label="Search" aria-describedby="search-addon">
+          <button type="button" class="trigger_search" id="search-btn"><i class="fas fa-search icon"></i></button>
+        </div> 
+      </section>
+
+      <!--x------- Site Title -------x-->
+         
+
+      <!----- Latest Article Carousel ----->
+      <section class="section-articles" id="articles">
+
+<div class="container">
+  <p class="heading-article">Trending Articles</p>
+        <div class="grid">
+          <div class="article">
+            <img
+              src="images/band.jpg"
+              class="article-img"
+              alt="Musical Performance"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegetarian">Singapore</span>
+              </div>
+              <p class="article-title">Singapore Music Festival Returns! It's now bigger & better!</p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+              <span class="author-name">Fahmi Ghazel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="article">
+            <img
+              src="images/beerfest.jpg"
+              class="article-img"
+              alt="Japanese Gyozas"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegetarian">Singapore</span>
+              </div>
+              <p class="article-title">Beerfest Asia 2022 is heading to Singpore with more flavors!</p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+              <span class="author-name">Heintze Malack</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="article">
+            <img
+              src="images/alley.jpg"
+              class="article-img"
+              alt="Avocado Salad"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegan">Singapore</span>
+                <span class="tag tag--paleo">#Tips</span>
+              </div>
+              <p class="article-title">Neighbourhoods You Need to Explore In Singapore in 1 day!</p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+              <span class="author-name">Rizqin Rasheed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="article">
+            <img
+              src="images/ilight museum.jpg"
+              class="article-img"
+              alt="Avocado Salad"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegan">Singapore</span>
+                <span class="tag tag--paleo">Arts</span>
+              </div>
+              <p class="article-title">Future World: Museum Lighting shows Objectivity Signs</p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+              <span class="author-name">Xiao Mi Long</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <!--x-- Latest Article Carousel --x-->
+
+      <!----- Discover Now Carousel ----->
+      <section class="section-articles" id="discover" data-carousel>
+
+        <div class="container">
+          <p class="heading-article">Discover Now</p>
+                <div class="grid">
+                  <div class="article">
+                    <img
+                      src="images/Dis 1.jpg"
+                      class="article-img"
+                      alt="Musical Performance"
+                    />
+                    <div class="article-content">
+                      <div class="article-tags">
+                        <span class="tag tag--vegetarian">Singapore</span>
+                      </div>
+                      <p class="article-title">Singapore Music Festival Returns! It's now bigger & better!</p>
+                      <div>
+                        <i class="fa-solid fa-user fa-3x"></i>
+                      <span class="author-name">Fahmi Ghazel</span>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="article">
+                    <img
+                      src="images/Dis 2.jpg"
+                      class="article-img"
+                      alt="Japanese Gyozas"
+                    />
+                    <div class="article-content">
+                      <div class="article-tags">
+                        <span class="tag tag--vegetarian">Singapore</span>
+                      </div>
+                      <p class="article-title">Beerfest Asia 2022 is heading to Singpore with more flavors!</p>
+                      <div>
+                        <i class="fa-solid fa-user fa-3x"></i>
+                      <span class="author-name">Heintze Malack</span>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="article">
+                    <img
+                      src="images/Dis 3.jpg"
+                      class="article-img"
+                      alt="Avocado Salad"
+                    />
+                    <div class="article-content">
+                      <div class="article-tags">
+                        <span class="tag tag--vegan">Singapore</span>
+                        <span class="tag tag--paleo">#Tips</span>
+                      </div>
+                      <p class="article-title">Neighbourhoods You Need to Explore In Singapore in 1 day!</p>
+                      <div>
+                        <i class="fa-solid fa-user fa-3x"></i>
+                      <span class="author-name">Rizqin Rasheed</span>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="article">
+                    <img
+                      src="images/Dis 4.jpg"
+                      class="article-img"
+                      alt="Avocado Salad"
+                    />
+                    <div class="article-content">
+                      <div class="article-tags">
+                        <span class="tag tag--vegan">Singapore</span>
+                        <span class="tag tag--paleo">Arts</span>
+                      </div>
+                      <p class="article-title">Future World: Museum Lighting between Objectivity Signs </p>
+                      <div>
+                        <i class="fa-solid fa-user fa-3x"></i>
+                      <span class="author-name">Xiao Mi Long</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </section>
+
+      <!--x-- Discover Now Carousel --x-->
+
+      <!-------- Feature Title -------->
+    <section class="feature-title">
+      <div class="container grid grid--3-cols">
+        <div class="feature">
+          <ion-icon class="feature-icon" name="earth-outline"></ion-icon>
+          <p class="feature-title">Plan Your Trip!</p>
+          <p class="feature-text">
+           Find inspiration & insider's lobang for your next trip to Singapore.
+          </p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature-icon" name="happy-outline"></ion-icon>
+          <p class="feature-title">Meet Our Locals</p>
+          <p class="feature-text">
+            Meet & Connect with our friendly locals for a true Singapore Experience.
+          </p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature-icon" name="map-outline"></ion-icon>
+          <p class="feature-title">Be Different</p>
+          <p class="feature-text">
+           Discover off the beaten path destinations in Singapore.
+          </p>
+        </div>
+      </div>
+    </section>
+
+      <!--x----- Feature Title -----x-->
+      
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Join Our Community!</h2>
+              <p class="cta-text">
+                Travelling is about making memories with your family and friends. Our community has thousands of travellers ready to share their insider tips to make your next trip memorable!
+              </p>
+
+              <form class="cta-form" name="sign-up" netlify>
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select id="select-where" name="select-where" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+
+                <button class="btn--form">Sign up now</button>
+
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Community Travelers"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          
+
+          
+
+          <a href="#" class="footer-logo">
+            <img class="footer-img-logo" alt="Travel Lobang logo" src="images/logo.png" />
+          </a>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by Travel-Lobang, Inc.  All rights reserved.
+          </p>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              70 Shenton Way, 079118, Singapore
+            </p>
+            <p>
+              <a class="footer-link" href="tel:62353535">62353535</a
+              ><br />
+              <a class="footer-link" href=""
+                >hello@travelobang.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Travel-Lobang</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <!----x------------ Main Content ------------x-->
+
+    <!-- Jquery Library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="./index.js"></script>
+    <script src="general.js"></script>
+
+    
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/05b98f9769.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Ion Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+  </body>
+</html>

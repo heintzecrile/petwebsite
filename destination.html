@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Lobang: Adventure Begins!</title>
+
+     <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/queries.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Javascript Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <title>Destinations</title>
+  </head>
+  <body>
+    <!----------------- Navigation ----------------->
+    <header class="header">
+      <a href="index.html">
+        <img class="logo" alt="Travel Lobang logo" src="images/logo.png" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="itinerary.html">Itinerary</a></li>
+          <li>
+            <a class="main-nav-link" href="destination.html">Destination</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Go Local!</a>
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#articles">Explore Now</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <!----x------------ Navigation ------------x---->
+    <main>
+      <!--------------- Header Section --------------->
+      <section class="section-hero-destination">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Singapore</h1>
+            <p class="hero-description">
+              In the small but bustling island nation of Singapore, you'll find
+              a fusion of Chinese, Malaysian and Indian cultures. The city's
+              original name, Singapura (Lion City), comes from the Malay legend
+              of a lion that fought off an attack from an evil deity. It became
+              a British trading post in 1819 and was ceded to the British Empire
+              in 1824.
+            </p>
+            <a href="#testimonials" class="btn--full btn--dest"
+              >Explore Singapore &darr;</a
+            >
+            <div class="testimony-meals">
+              <div class="testimony-imgs">
+                <img src="images/customer-1.jpg" alt="Customer photo" />
+                <img src="images/customer-2.jpg" alt="Customer photo" />
+                <img src="images/customer-3.jpg" alt="Customer photo" />
+                <img src="images/customer-4.jpg" alt="Customer photo" />
+                <img src="images/customer-5.jpg" alt="Customer photo" />
+                <img src="images/customer-6.jpg" alt="Customer photo" />
+              </div>
+              <p class="testimony-text">
+                <span class="testimony-text-span">300,000+</span> tourist visits in 2021!
+              </p>
+            </div>
+          </div>
+          <!----x---------- Header Section ---------x----->
+
+          <!--------------- Floating Image --------------->
+          <div class="slider">
+            <span style="--i: 1"><img src="images/flyer.jpg" alt="" id="image1" onmouseover="changeImage();"/></span>
+            <span style="--i: 2"
+              ><img src="images/fort canning.jpg" alt=""
+            /></span>
+            <span style="--i: 3"><img src="images/garden.jpg" alt="" /></span>
+            <span style="--i: 4"><img src="images/sentosa.jpg" alt="" id="image2" onmouseover="changeImages();"/></span>
+
+            <span style="--i: 5"><img src="images/skyline.jpg" alt="" id="image3" onmouseover="onHover();" onmouseout="offHover();"/></span>
+            <span style="--i: 6"><img src="images/sultan.jpg" alt="" /></span>
+            <span style="--i: 7"><img src="images/temple.jpg" alt="" /></span>
+            <span style="--i: 8"
+              ><img src="images/fort canning.jpg" alt=""
+            /></span>
+          </div>
+        </div>
+      </section>
+      <!----x---------- Floating Image ---------x----->
+
+      <!---------------- Testimonials ---------------->
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">Be Kiasu, Travel More Lah!</span>
+          <h2 class="heading-secondary">What great adventures look like!</h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Dave Bryson"
+                src="images/dave.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Singapore is one of the cleanest, if not the cleanest country in
+                Southeast-Asia! The streets are safe and well organized.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Sadio Mane</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Ben Hadley"
+                src="images/ben.jpg"
+              />
+              <blockquote class="testimonial-text">
+                What a fantastic place to visit, this must be the place to go if
+                you want to see a society where respect still exists.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Wayne Rooney</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Steve Miller"
+                src="images/steve.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Been there a few times. The country is very clean. Travelling
+                around is easy and the MRT provides extensive network.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Steve Miller</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Hannah Smith"
+                src="images/hannah.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Singapore is such a joy to visit. Almost every attraction within
+                easy walking distance without the complicated road systems and
+                flyovers of Hong Kong.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Hannah Ameerah</p>
+            </figure>
+          </div>
+        </div>
+        <!----x----------- Testimonials ----------x----->
+
+        <!---------------- Image Gallery --------------->
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img
+              src="images/Fahmi & Daryl.JPG"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/ATV.JPG"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/3 idiots.JPG"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/Ubin.JPG"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/Sandwich.JPG"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/Lazarus.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/Lazarus1.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/Dog.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/Pottery.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/uss.JPG"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/tjark.JPG"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/na.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+        </div>
+        <!----x----------- Image Gallery ---------x----->
+      </section>
+
+      <!---------------- Site Content --------------->
+      <section class="site-content-section container">
+        <div class="site-content">
+          <!----- 1st Blog Post ----->
+          <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+            <div class="post-image">
+              <div>
+                <img src="/images/desti-photo1.jpeg" alt="blog 1" class="img" />
+              </div>
+              <div class="post-info flex-row">
+                <span
+                  ><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span
+                >
+                <span
+                  ><i class="fa-solid fa-calendar-days text-gray"></i
+                  >&nbsp;&nbsp;September 11, 2022</span
+                >
+                <span>2 Comments</span>
+              </div>
+            </div>
+            <div class="post-title">
+              <a href="#"
+                >Here's a list of cafe's for your next weekend food hunting adventure! We list them from the cheapest to most expensive. </a
+              >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                minus earum corrupti quod doloribus fugiat quidem molestiae, aut
+                provident incidunt. Obcaecati unde voluptatum quas fugiat itaque
+                laudantium deleniti. Laudantium asperiores mollitia aperiam
+                suscipit eligendi dignissimos possimus natus dolore autem
+                excepturi.
+              </p>
+            </div>
+          </div>
+          <!--x-- 1st Blog Post --x-->
+          <hr />
+          <!----- 2nd Blog Post ----->
+          <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+            <div class="post-image">
+              <div>
+                <img src="/images/desti-photo2.jpeg" alt="blog 1" class="img" />
+              </div>
+              <div class="post-info flex-row">
+                <span
+                  ><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span
+                >
+                <span
+                  ><i class="fa-solid fa-calendar-days text-gray"></i
+                  >&nbsp;&nbsp;September 11, 2022</span
+                >
+                <span>2 Comments</span>
+              </div>
+            </div>
+            <div class="post-title">
+              <a href="#"
+                >Planning to travel to Singapore? Read this article to plan your route with comprehensive guide from our local travellers.</a
+              >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                minus earum corrupti quod doloribus fugiat quidem molestiae, aut
+                provident incidunt. Obcaecati unde voluptatum quas fugiat itaque
+                laudantium deleniti. Laudantium asperiores mollitia aperiam
+                suscipit eligendi dignissimos possimus natus dolore autem
+                excepturi.
+              </p>
+            </div>
+          </div>
+          <!--x-- 2nd Blog Post --x-->
+          <hr />
+          <!----- 3rd Blog Post ----->
+          <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+            <div class="post-image">
+              <div>
+                <img src="/images/desti-photo3.jpeg" alt="blog 1" class="img" />
+              </div>
+              <div class="post-info flex-row">
+                <span
+                  ><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span
+                >
+                <span
+                  ><i class="fa-solid fa-calendar-days text-gray"></i
+                  >&nbsp;&nbsp;September 11, 2022</span
+                >
+                <span>2 Comments</span>
+              </div>
+            </div>
+            <div class="post-title">
+              <a href="#"
+                > Hunt for inspiration in Singapore, with our guide to street art and wall murals in the Lion City.</a
+              >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                minus earum corrupti quod doloribus fugiat quidem molestiae, aut
+                provident incidunt. Obcaecati unde voluptatum quas fugiat itaque
+                laudantium delenitigit. Laudantium asperiores mollitia aperiam
+                suscipit eligendi dignissimos possimus natus dolore autem
+                excepturi.
+              </p>
+            </div>
+          </div>
+          <!--x-- 3rd Blog Post --x-->
+          <hr />
+          <!----- 4th Blog Post ----->
+          <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+            <div class="post-image">
+              <div>
+                <img src="/images/desti-photo4.jpeg" alt="blog 1" class="img" />
+              </div>
+              <div class="post-info flex-row">
+                <span
+                  ><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span
+                >
+                <span
+                  ><i class="fa-solid fa-calendar-days text-gray"></i
+                  >&nbsp;&nbsp;September 11, 2022</span
+                >
+                <span>2 Comments</span>
+              </div>
+            </div>
+            <div class="post-title">
+              <a href="#"
+                >Get ready to scream: Halloween Horror Nights at Universal Studios Singapore is back after a two-years</a
+              >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                minus earum corrupti quod doloribus fugiat quidem molestiae, aut
+                provident incidunt. Obcaecati unde voluptatum quas fugiat itaque
+                laudantium deleniti. Laudantium asperiores mollitia aperiam
+                suscipit eligendi dignissimos possimus natus dolore autem
+                excepturi.
+              </p>
+            </div>
+            <div class="pagination flex-row">
+              <a href="#"><i class="fas fa-chevron-left"></i></a>
+              <a href="#" class="pages">1</a>
+              <a href="#" class="pages">2</a>
+              <a href="#" class="pages">3</a>
+              <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+          <!--x-- 4th Blog Post --x-->
+        </div>
+
+        <!----- Sidebar Category ----->
+        <aside class="sidebar">
+          <div class="category">
+              <h2>Category</h2>
+              <ul class="category-list">
+                  <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                      <a href="#">Transportation</a>
+                      <span>(05)</span>
+                  </li>
+                  <li class="list-items" data-aos="fade-left" data-aos-delay="200">
+                      <a href="#">Lifestyle</a>
+                      <span>(02)</span>
+                  </li>
+                  <li class="list-items" data-aos="fade-left" data-aos-delay="300">
+                      <a href="#">Hotels</a>
+                      <span>(07)</span>
+                  </li>
+                  <li class="list-items" data-aos="fade-left" data-aos-delay="400">
+                      <a href="#">Shopping</a>
+                      <span>(01)</span>
+                  </li>
+                  <li class="list-items" data-aos="fade-left" data-aos-delay="500">
+                      <a href="#">Food</a>
+                      <span>(08)</span>
+                  </li>
+              </ul>
+          </div>
+           <!--x-- Sidebar Category --x-->
+
+
+          <!----- Sidebar Popular Post ----->
+          <div class="popular-post">
+            <h2>Popular Post</h2>
+            <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                <div class="post-image">
+                    <div>
+                        <img src="/images/desti-photo5.jpeg" class="popular-img" alt="blog1">
+                    </div>
+                    <div class="post-info flex-row">
+                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+                            2019</span>
+                        <span>2 Commets</span>
+                    </div>
+                </div>
+                <div class="post-title">
+                    <a href ="#" class="new-title">The best vegetarian and vegan restaurants in Singapore</a>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                      minus earum corrupti quod doloribus fugiat quidem molestiae, aut
+                      provident incidunt. Obcaecati unde voluptatum quas fugiat itaque
+                      laudantium deleniti.
+                    </p>
+                </div>
+            </div>
+            <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                <div class="post-image">
+                    <div>
+                        <img src="/images/desti-photo6.jpeg" class="popular-img" alt="blog1">
+                    </div>
+                    <div class="post-info flex-row">
+                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+                            2019</span>
+                        <span>2 Commets</span>
+                    </div>
+                </div>
+                <div class="post-title">
+                    <a href="#" class="new-title">Dare to go off the beaten path? Visit our neighbourhood coffeeshop for a aunthentic experience!</a>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                      minus earum corrupti quod doloribus fugiat quidem molestiae, aut
+                      provident incidunt. Obcaecati unde voluptatum quas fugiat itaque
+                      laudantium deleniti.
+                    </p>
+                </div>
+            </div>
+            <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                <div class="post-image">
+                    <div>
+                        <img src="/images/desti-photo8.jpg" class="popular-img" alt="blog1">
+                    </div>
+                    <div class="post-info flex-row">
+                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+                            2019</span>
+                        <span>2 Commets</span>
+                    </div>
+                </div>
+                <div class="post-title">
+                    <a href="#" class="new-title">COVID-19 Rules and Restrictions in Singapore (Aug 2022).</a>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                      minus earum corrupti quod doloribus fugiat quidem molestiae, aut
+                      provident incidunt. Obcaecati unde voluptatum quas fugiat itaque
+                      laudantium deleniti.
+                    </p>
+                </div>
+            </div>
+            <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                <div class="post-image">
+                    <div>
+                        <img src="/images/desti-photo7.jpg" class="popular-img" alt="blog1">
+                    </div>
+                    <div class="post-info flex-row">
+                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+                            2019</span>
+                        <span>2 Commets</span>
+                    </div>
+                </div>
+                <div class="post-title">
+                    <a href="#" class="new-title">3 Reasons Why Singapore Hawker Food is Instantly Gratifying and Should Be Tomorrows Lunch</a>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                      minus earum corrupti quod doloribus fugiat quidem molestiae, aut
+                      provident incidunt. Obcaecati unde voluptatum quas fugiat itaque
+                      laudantium deleniti.
+                    </p>
+                </div>
+            </div>
+            <div class="popup-newsletter" id="newsletter">
+              <a href="#form" class="newsletter-btn" data-aos="fade-left" data-aos-delay="100">Subscribe to our Newsletter 🔔</a>
+              <div class="newsletter">
+                <div class="newsletter-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="newsletter-body">
+                  <p>Subscribe</p>
+                  <p>To Our Newsletter</p>
+                  <p>Join with our 70+ Awesome 😍 Community Members</p>
+                </div>
+        
+                <div class="newsletter-form" id="form">
+                  <input type="text" name="" id="email" placeholder="Your Email" onkeydown="validation()" />
+                  <span id="text"></span>
+                  <button type="submit" id="btn">Subscribe</button>
+                </div>
+        
+                <a href="#newsletter" class="newsletter-close-btn">I Don't Need It</a>
+              </div>
+            </div>
+        </div>
+        <!--x-- Sidebar Popular Post --x-->
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          
+
+          
+
+          <a href="#" class="footer-logo">
+            <img class="footer-img-logo" alt="Travel Lobang logo" src="images/logo.png" />
+          </a>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by Travel-Lobang, Inc.
+            All rights reserved. </p>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              70 Shenton Way, 079118, Singapore
+            </p>
+            <p>
+              <a class="footer-link" href="tel:62353535">62353535</a
+              ><br />
+              <a class="footer-link" href=""
+                >hello@travelobang.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Travel-Lobang</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+     <!----x----------- Site Content ---------x----->
+
+    <!-- Custom Javascript -->
+     <script src="/destination.js"></script>
+     <script src="/general.js"></script>
+
+    <!-- Jquery Library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    
+    <!-- AOS Javascript Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Ion Icon -->
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule=""
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+    defer
+    src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+  </body>
+</html>
